@@ -1,0 +1,12 @@
+# GitHub Pages configuration for INNO-SCREW website
+theme: null
+plugins: []
+exclude:
+  - tools/
+  - README.md
+  - LICENSE
+  - .git/
+  - .gitignore
+
+# Disable Jekyll processing
+future: false

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Forschungsinfrastruktur &mdash; INNO-SCREW</title>
+<meta name="description" content="Fuenf Schraubsysteme der INNO-SCREW-Forschungsinfrastruktur: ASS, RSS, MSS, DSS und KSS mit technischen Daten und Datenanbindung."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F529;</text></svg>"/>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav>
+<div class="nw">
+  <a href="index.html" class="logo" style="padding:2px 0;display:flex;align-items:center">
+    <img src="assets/logo.png" alt="INNO-SCREW" style="height:38px;width:auto;display:block">
+  </a>
+  <ul class="nl" id="nl">
+    <li><a href="index.html" data-de="Startseite" data-en="Home">Startseite</a></li>
+    <li><a href="project.html" data-de="Projekt" data-en="Project">Projekt</a></li>
+    <li><a href="infrastructure.html" data-de="Infrastruktur" data-en="Infrastructure">Infrastruktur</a></li>
+    <li><a href="data.html" data-de="Forschungsdaten" data-en="Research Data">Forschungsdaten</a></li>
+    <li><a href="publications.html" data-de="Publikationen" data-en="Publications">Publikationen</a></li>
+    <li><a href="news.html" data-de="Aktuelles" data-en="News">Aktuelles</a></li>
+    <li><a href="contact.html" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+  </ul>
+  <div class="nc">
+    <button class="blng" id="blng" title="Switch language" aria-label="Switch language">EN</button>
+    <button class="bthm" id="bthm" title="Toggle dark mode" aria-label="Toggle dark mode"></button>
+    <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</div>
+</nav>
+
+<nav class="stnav" id="stnav">
+  <div class="stnav-inner">
+    <a href="#" class="active" data-panel="overview" onclick="switchSystem(event,'overview')">&#128451;&#65039; <span class="de-block">&Uuml;bersicht</span><span class="en-block" style="display:none">Overview</span></a>
+    <a href="#" data-panel="ass" onclick="switchSystem(event,'ass')">&#128297; <span class="badge">ASS</span> <span class="de-block">Vollautomatische, NC-gesteuerte Station</span><span class="en-block" style="display:none">Fully automatic, NC-controlled station</span></a>
+    <a href="#" data-panel="rss" onclick="switchSystem(event,'rss')">&#129302; <span class="badge">RSS</span> <span class="de-block">Cobot mit Schraubaktor und Zuf&uuml;hrung</span><span class="en-block" style="display:none">Cobot with screwdriving actuator and feed</span></a>
+    <a href="#" data-panel="mss" onclick="switchSystem(event,'mss')">&#128400;&#65039; <span class="badge">MSS</span> <span class="de-block">Montagearbeitsplatz mit manuellem Vorschub</span><span class="en-block" style="display:none">Assembly workstation with manual feed</span></a>
+    <a href="#" data-panel="dss" onclick="switchSystem(event,'dss')">&#9881;&#65039; <span class="badge">DSS</span> <span class="de-block">Zweispindliges System bis 180 Nm</span><span class="en-block" style="display:none">Dual-spindle system up to 180 Nm</span></a>
+    <a href="#" data-panel="kss" onclick="switchSystem(event,'kss')">&#128295; <span class="badge">KSS</span> <span class="de-block">Handgef&uuml;hrte Akkuschrauber, drei Varianten</span><span class="en-block" style="display:none">Hand-held cordless tools, three variants</span></a>
+  </div>
+</nav>
+
+<div class="station-panel active" id="panel-overview">
+  <div class="st-hero">
+    <div class="st-hero-inner">
+      <div>
+        <div class="st-badge">INNO-SCREW &middot; <span class="de-block">Forschungsinfrastruktur</span><span class="en-block" style="display:none">Research infrastructure</span></div>
+        <h1 data-de="Forschungsinfrastruktur" data-en="Research infrastructure">Forschungsinfrastruktur</h1>
+        <p class="de-block">F&uuml;nf Schraubsysteme unterschiedlicher Bauart mit einheitlicher Messdatenerfassung. Sie bilden die Grundlage aller experimentellen Untersuchungen im Projekt.</p>
+        <p class="en-block" style="display:none">Five screwdriving systems of different designs with a uniform data acquisition setup. They form the basis of all experimental investigations in the project.</p>
+        <div class="st-chips"><span class="chip">ASS</span><span class="chip">RSS</span><span class="chip">MSS</span><span class="chip">DSS</span><span class="chip">KSS</span><span class="chip">Drehmoment &middot; Winkel &middot; Zeit</span></div>
+      </div>
+      <div class="st-icon-big">&#127981;</div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="wrap">
+    <div class="sh">
+      <div class="skk" data-de="Kennzeichnung" data-en="Identifiers">Kennzeichnung</div>
+      <h2 data-de="Systeme, Szenarien und Datens&auml;tze" data-en="Systems, scenarios and datasets">Systeme, Szenarien und Datens&auml;tze</h2>
+      <div class="sr"></div>
+      <p class="de-block">Das Projekt unterscheidet drei Ebenen von Kennungen. Sie werden auf der gesamten Website getrennt gef&uuml;hrt.</p>
+      <p class="en-block" style="display:none">The project distinguishes three levels of identifier. They are kept separate throughout this site.</p>
+    </div>
+
+  <div class="idkey">
+    <div>
+      <code>ASS, RSS, MSS, DSS, KSS</code>
+      <span class="de-block">Kennungen der f&uuml;nf physischen Schraubsysteme der Forschungsinfrastruktur.</span>
+      <span class="en-block" style="display:none">Identifiers of the five physical screwdriving systems in the research infrastructure.</span>
+    </div>
+    <div>
+      <code>S01 &hellip; S06</code>
+      <span class="de-block">Experimentelle Szenarien &mdash; jeweils eine definierte Versuchsreihe mit eigenem Fehlerbild.</span>
+      <span class="en-block" style="display:none">Experimental scenarios &mdash; each a defined series of trials with its own set of process deviations.</span>
+    </div>
+    <div>
+      <code>DS-2025-01, DS-2026-01 &hellip;</code>
+      <span class="de-block">Datens&auml;tze bzw. Messkampagnen mit eigener Version, Lizenz und DOI.</span>
+      <span class="en-block" style="display:none">Datasets and measurement campaigns, each with its own version, licence and DOI.</span>
+    </div>
+  </div>
+
+    <div class="tscroll" style="max-width:940px;margin:0 auto">
+      <table class="dtable">
+        <thead><tr>
+          <th data-de="Szenario" data-en="Scenario">Szenario</th>
+          <th data-de="Untersuchungsgegenstand" data-en="Subject of study">Untersuchungsgegenstand</th>
+          <th data-de="System" data-en="System">System</th>
+          <th data-de="Schraubvorg&auml;nge" data-en="Recordings">Schraubvorg&auml;nge</th>
+          <th data-de="Klassen" data-en="Classes">Klassen</th>
+          <th data-de="Datensatz" data-en="Dataset">Datensatz</th>
+        </tr></thead>
+        <tbody>
+      <tr><td><code>S01</code></td><td><strong><span class="de-block">Gewindesch&auml;digung</span><span class="en-block" style="display:none">Thread degradation</span></strong></td><td><code>ASS</code></td><td>5.000</td><td>2 (OK / NOK)</td><td><code>DS-2025-01</code></td></tr>
+      <tr><td><code>S02</code></td><td><strong><span class="de-block">Oberfl&auml;chenreibung</span><span class="en-block" style="display:none">Surface friction</span></strong></td><td><code>RSS</code></td><td>12.500</td><td>8</td><td><code>DS-2025-02</code></td></tr>
+      <tr><td><code>S03</code></td><td><strong><span class="de-block">Montagebedingungen 1</span><span class="en-block" style="display:none">Assembly conditions 1</span></strong></td><td><code>MSS</code></td><td>1.700</td><td>26</td><td><code>DS-2025-03</code></td></tr>
+      <tr><td><code>S04</code></td><td><strong><span class="de-block">Montagebedingungen 2</span><span class="en-block" style="display:none">Assembly conditions 2</span></strong></td><td><code>DSS</code></td><td>5.000</td><td>25</td><td><code>DS-2025-04</code></td></tr>
+      <tr><td><code>S05</code></td><td><strong><span class="de-block">Oberes Werkst&uuml;ck</span><span class="en-block" style="display:none">Upper workpiece</span></strong></td><td><code>KSS</code></td><td>2.400</td><td>42</td><td><code>DS-2025-05</code></td></tr>
+      <tr><td><code>S06</code></td><td><strong><span class="de-block">Unteres Werkst&uuml;ck</span><span class="en-block" style="display:none">Lower workpiece</span></strong></td><td><code>KSS</code></td><td>7.482</td><td>44</td><td><code>DS-2025-06</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note" style="max-width:940px;margin:1.6rem auto 0">
+      <span class="de-block">Die Szenarien S01 bis S06 stammen aus der ver&ouml;ffentlichten Datensatzsammlung und wurden teilweise in Vorarbeiten aufgezeichnet. Laufende Messkampagnen aus INNO-SCREW werden unter eigenen Datensatzkennungen gef&uuml;hrt (siehe <a href="data.html" style="color:var(--bl2)">Forschungsdaten</a>).</span>
+      <span class="en-block" style="display:none">Scenarios S01 to S06 come from the published dataset collection and were in part recorded in preliminary work. Ongoing measurement campaigns within INNO-SCREW are tracked under their own dataset identifiers (see <a href="data.html" style="color:var(--bl2)">Research Data</a>).</span>
+    </div>
+  </div></div>
+
+  <div class="sec sec-a"><div class="wrap">
+    <div class="sh">
+      <div class="skk" data-de="Schraubsysteme" data-en="Screwdriving systems">Schraubsysteme</div>
+      <h2 data-de="F&uuml;nf Systeme im &Uuml;berblick" data-en="Five systems at a glance">F&uuml;nf Systeme im &Uuml;berblick</h2>
+      <div class="sr"></div>
+    </div>
+    <div class="st-overview-grid">
+      <a class="st-card" href="#" onclick="switchSystem(event,'ass')">
+        <span class="st-card-icon">&#128297;</span><span class="st-card-code">ASS</span>
+        <h3 data-de="Automatische Schraubstation" data-en="Automatic screwdriving station">Automatische Schraubstation</h3>
+        <p class="de-block">Vollautomatische, NC-gesteuerte Schraubstation (Bosch Rexroth CS351) mit einer Spindel und zwei Verschraubungen je Zyklus.</p>
+        <p class="en-block" style="display:none">Fully automatic, NC-controlled screwdriving station (Bosch Rexroth CS351) with one spindle and two fastenings per cycle.</p>
+        <div class="st-card-link"><span class="de-block">Details</span><span class="en-block" style="display:none">Details</span></div>
+      </a>
+      <a class="st-card" href="#" onclick="switchSystem(event,'rss')">
+        <span class="st-card-icon">&#129302;</span><span class="st-card-code">RSS</span>
+        <h3 data-de="Roboterbasierte Schraubstation" data-en="Robot-based screwdriving station">Roboterbasierte Schraubstation</h3>
+        <p class="de-block">Robotergest&uuml;tzte Durchf&uuml;hrung automatisierter und reproduzierbarer Versuchsabl&auml;ufe auf einem mobilen Montagesockel.</p>
+        <p class="en-block" style="display:none">Robot-assisted execution of automated and reproducible experimental runs on a mobile assembly base.</p>
+        <div class="st-card-link"><span class="de-block">Details</span><span class="en-block" style="display:none">Details</span></div>
+      </a>
+      <a class="st-card" href="#" onclick="switchSystem(event,'mss')">
+        <span class="st-card-icon">&#128400;&#65039;</span><span class="st-card-code">MSS</span>
+        <h3 data-de="Manuelle Schraubstation" data-en="Manual screwdriving station">Manuelle Schraubstation</h3>
+        <p class="de-block">Klassischer Montagearbeitsplatz mit manuellem Vorschub zur Untersuchung bedienerabh&auml;ngiger Prozessstreuung.</p>
+        <p class="en-block" style="display:none">Classic assembly workstation with manual feed for investigating operator-dependent process variation.</p>
+        <div class="st-card-link"><span class="de-block">Details</span><span class="en-block" style="display:none">Details</span></div>
+      </a>
+      <a class="st-card" href="#" onclick="switchSystem(event,'dss')">
+        <span class="st-card-icon">&#9881;&#65039;</span><span class="st-card-code">DSS</span>
+        <h3 data-de="Doppelspindel-Schraubstation" data-en="Dual-spindle screwdriving station">Doppelspindel-Schraubstation</h3>
+        <p class="de-block">Zweispindliges Schraubsystem zur Untersuchung simultaner Schraubprozesse im h&ouml;heren Drehmomentbereich.</p>
+        <p class="en-block" style="display:none">Dual-spindle screwdriving system for investigating simultaneous fastening processes at higher torque levels.</p>
+        <div class="st-card-link"><span class="de-block">Details</span><span class="en-block" style="display:none">Details</span></div>
+      </a>
+      <a class="st-card" href="#" onclick="switchSystem(event,'kss')">
+        <span class="st-card-icon">&#128295;</span><span class="st-card-code">KSS</span>
+        <h3 data-de="Kabellose Schraubsysteme" data-en="Cordless screwdriving systems">Kabellose Schraubsysteme</h3>
+        <p class="de-block">Handgef&uuml;hrte Schraubsysteme mit integrierter Prozess&uuml;berwachung auf Basis von Drehmoment- und Winkeldaten.</p>
+        <p class="en-block" style="display:none">Hand-held screwdriving systems with integrated process monitoring based on torque and angle data.</p>
+        <div class="st-card-link"><span class="de-block">Details</span><span class="en-block" style="display:none">Details</span></div>
+      </a>
+    </div>
+  </div></div>
+</div>
+
+<div class="station-panel" id="panel-ass">
+  <div class="st-hero">
+    <div class="st-hero-inner">
+      <div>
+        <div class="st-badge">ASS &middot; <span class="de-block">Schraubsystem</span><span class="en-block" style="display:none">Screwdriving system</span></div>
+        <h1 data-de="Automatische Schraubstation" data-en="Automatic screwdriving station">Automatische Schraubstation</h1>
+        <p class="de-block">Vollautomatische, NC-gesteuerte Schraubstation (Bosch Rexroth CS351) mit einer Spindel und zwei Verschraubungen je Zyklus.</p>
+        <p class="en-block" style="display:none">Fully automatic, NC-controlled screwdriving station (Bosch Rexroth CS351) with one spindle and two fastenings per cycle.</p>
+        <div class="st-chips"><span class="chip">Bosch Rexroth CS351</span><span class="chip">0,5 &ndash; 5,6 Nm</span><span class="chip">780 U/min</span><span class="chip">JSON / FTP</span></div>
+      </div>
+      <div class="st-icon-big">&#128297;</div>
+    </div>
+  </div>
+  <div class="sec"><div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start">
+      <div>
+        <div class="skk" style="margin-bottom:1rem" data-de="Beschreibung" data-en="Description">Beschreibung</div>
+        <p class="de-block" style="color:var(--mu);line-height:1.9;font-size:.95rem">Die Automatische Schraubstation (ASS) wurde urspr&uuml;nglich f&uuml;r die Verschraubung von Motorgeh&auml;useteilen bei Bosch Ungarn ausgelegt. Sie f&uuml;hrt zwei Verschraubungen mit einer Spindel durch, vollautomatisch und NC-gesteuert &uuml;ber ein CS351-Einkanalsystem von Bosch Rexroth. Die ASS war zu Projektbeginn die einzige vollst&auml;ndig einsatzf&auml;hige Station der Forschungsinfrastruktur. Die Prozessdaten werden als JSON &uuml;ber einen FTP-Server abgelegt; erfasst werden Drehmoment, Drehwinkel, Zeit und Gradient.</p>
+        <p class="en-block" style="display:none;color:var(--mu);line-height:1.9;font-size:.95rem">The automatic screwdriving station (ASS) was originally designed for fastening motor housing components at Bosch Hungary. It performs two fastenings with a single spindle, fully automatic and NC-controlled via a Bosch Rexroth CS351 single-channel system. At the start of the project the ASS was the only fully operational station in the research infrastructure. Process data are written as JSON to an FTP server; torque, angle, time and gradient are recorded.</p>
+        <div style="margin-top:1.6rem;display:flex;gap:.6rem;flex-wrap:wrap">
+          <a href="data.html#datensaetze" class="btn btn-b btn-sm" data-de="Zugeh&ouml;rige Datens&auml;tze" data-en="Related datasets">Zugeh&ouml;rige Datens&auml;tze</a>
+        </div>
+      </div>
+      <div>
+        <img src="assets/station-ass.webp" alt="Automatische Schraubstation" style="width:100%;border-radius:8px;display:block;margin-bottom:1.2rem;object-fit:contain;max-height:400px">
+        <div class="spec-label" data-de="Technische Daten" data-en="Technical data">Technische Daten</div>
+        <div class="spec-table">
+          <div class="spec-row"><span class="spec-key" data-de="Hersteller" data-en="Manufacturer">Hersteller</span><span class="spec-val">Bosch Rexroth</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Steuerung" data-en="Control system">Steuerung</span><span class="spec-val">NC &mdash; CS351 Einkanalsystem</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Drehmomentbereich" data-en="Torque range">Drehmomentbereich</span><span class="spec-val">0,5 &ndash; 5,6 Nm</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Max. Drehzahl" data-en="Max. speed">Max. Drehzahl</span><span class="spec-val">780 U/min</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Spindeln" data-en="Spindles">Spindeln</span><span class="spec-val">1</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Datenanbindung" data-en="Connectivity">Datenanbindung</span><span class="spec-val">JSON &uuml;ber FTP-Server</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Messgr&ouml;&szlig;en" data-en="Measured variables">Messgr&ouml;&szlig;en</span><span class="spec-val">Drehmoment, Drehwinkel, Zeit, Gradient</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Herkunft" data-en="Origin">Herkunft</span><span class="spec-val">Motorgeh&auml;usemontage, Bosch Ungarn</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Status" data-en="Status">Status</span><span class="spec-val">Einsatzf&auml;hig</span></div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<div class="station-panel" id="panel-rss">
+  <div class="st-hero">
+    <div class="st-hero-inner">
+      <div>
+        <div class="st-badge">RSS &middot; <span class="de-block">Schraubsystem</span><span class="en-block" style="display:none">Screwdriving system</span></div>
+        <h1 data-de="Roboterbasierte Schraubstation" data-en="Robot-based screwdriving station">Roboterbasierte Schraubstation</h1>
+        <p class="de-block">Robotergest&uuml;tzte Durchf&uuml;hrung automatisierter und reproduzierbarer Versuchsabl&auml;ufe auf einem mobilen Montagesockel.</p>
+        <p class="en-block" style="display:none">Robot-assisted execution of automated and reproducible experimental runs on a mobile assembly base.</p>
+        <div class="st-chips"><span class="chip">Hanwha Cobot</span><span class="chip">OnRobot</span><span class="chip">0,15 &ndash; 5,0 Nm</span><span class="chip">Modbus TCP</span></div>
+      </div>
+      <div class="st-icon-big">&#129302;</div>
+    </div>
+  </div>
+  <div class="sec"><div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start">
+      <div>
+        <div class="skk" style="margin-bottom:1rem" data-de="Beschreibung" data-en="Description">Beschreibung</div>
+        <p class="de-block" style="color:var(--mu);line-height:1.9;font-size:.95rem">Die Roboterbasierte Schraubstation (RSS) besteht aus einem Hanwha-Cobot auf einem mobilen Montagesockel mit einem multifunktionalen Schraubaktor von OnRobot inklusive Schraubenzuf&uuml;hrung. Sie erlaubt die robotergest&uuml;tzte Durchf&uuml;hrung automatisierter und reproduzierbarer Versuchsabl&auml;ufe. Das System wurde im Rahmen des BMWi-Projekts SUPPLy beschafft und erprobt. Die Datenanbindung erfolgt &uuml;ber Modbus (TCP) und Ethernet/IP f&uuml;r den Schrauber sowie Modbus f&uuml;r den Roboter.</p>
+        <p class="en-block" style="display:none;color:var(--mu);line-height:1.9;font-size:.95rem">The robot-based screwdriving station (RSS) consists of a Hanwha cobot on a mobile assembly base with a multi-functional OnRobot screwdriving actuator including automatic screw feed. It allows automated and reproducible experimental runs to be carried out under robot control. The system was procured and tested in the BMWi project SUPPLy. Connectivity is via Modbus (TCP) and Ethernet/IP for the screwdriver and Modbus for the robot.</p>
+        <div style="margin-top:1.6rem;display:flex;gap:.6rem;flex-wrap:wrap">
+          <a href="data.html#datensaetze" class="btn btn-b btn-sm" data-de="Zugeh&ouml;rige Datens&auml;tze" data-en="Related datasets">Zugeh&ouml;rige Datens&auml;tze</a>
+        </div>
+      </div>
+      <div>
+        <img src="assets/station-rss.webp" alt="Roboterbasierte Schraubstation" style="width:100%;border-radius:8px;display:block;margin-bottom:1.2rem;object-fit:contain;max-height:400px">
+        <div class="spec-label" data-de="Technische Daten" data-en="Technical data">Technische Daten</div>
+        <div class="spec-table">
+          <div class="spec-row"><span class="spec-key" data-de="Roboter" data-en="Robot">Roboter</span><span class="spec-val">Hanwha Cobot, mobiler Montagesockel</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Schraubaktor" data-en="Actuator">Schraubaktor</span><span class="spec-val">OnRobot, multifunktional mit Zuf&uuml;hrung</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Drehmomentbereich" data-en="Torque range">Drehmomentbereich</span><span class="spec-val">0,15 &ndash; 5,0 Nm</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Max. Drehzahl" data-en="Max. speed">Max. Drehzahl</span><span class="spec-val">340 U/min</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Datenanbindung" data-en="Connectivity">Datenanbindung</span><span class="spec-val">Modbus TCP / Ethernet/IP</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Messgr&ouml;&szlig;en" data-en="Measured variables">Messgr&ouml;&szlig;en</span><span class="spec-val">Drehmoment, Vorschub, Vorschubkraft, Achsdaten</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Herkunft" data-en="Origin">Herkunft</span><span class="spec-val">Projekt SUPPLy (BMWi)</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Status" data-en="Status">Status</span><span class="spec-val">Bedingt einsatzf&auml;hig</span></div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<div class="station-panel" id="panel-mss">
+  <div class="st-hero">
+    <div class="st-hero-inner">
+      <div>
+        <div class="st-badge">MSS &middot; <span class="de-block">Schraubsystem</span><span class="en-block" style="display:none">Screwdriving system</span></div>
+        <h1 data-de="Manuelle Schraubstation" data-en="Manual screwdriving station">Manuelle Schraubstation</h1>
+        <p class="de-block">Klassischer Montagearbeitsplatz mit manuellem Vorschub zur Untersuchung bedienerabh&auml;ngiger Prozessstreuung.</p>
+        <p class="en-block" style="display:none">Classic assembly workstation with manual feed for investigating operator-dependent process variation.</p>
+        <div class="st-chips"><span class="chip">Bosch Rexroth</span><span class="chip">Manueller Vorschub</span><span class="chip">0,5 &ndash; 5,6 Nm</span><span class="chip">Open Protocol</span></div>
+      </div>
+      <div class="st-icon-big">&#128400;&#65039;</div>
+    </div>
+  </div>
+  <div class="sec"><div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start">
+      <div>
+        <div class="skk" style="margin-bottom:1rem" data-de="Beschreibung" data-en="Description">Beschreibung</div>
+        <p class="de-block" style="color:var(--mu);line-height:1.9;font-size:.95rem">Die Manuelle Schraubstation (MSS) entspricht einem klassischen Montagearbeitsplatz und stammt aus derselben dekommissionierten Fertigungslinie wie die ASS. Sie enth&auml;lt dieselbe Schraubeinheit wie die ASS (0,5 &ndash; 5,6 Nm, max. 780 U/min), der Vorschub erfolgt jedoch manuell durch eine Bedienperson. Damit eignet sie sich zur Untersuchung bedienerabh&auml;ngiger Prozessstreuung. F&uuml;r die Inbetriebnahme sind Schulungen von Bosch Rexroth erforderlich. Datenanbindung: FTP (ohne CF350-Karte) beziehungsweise Open Protocol, XML Protocol, Rexroth IPM Protocol oder HTTP (mit CF350-Karte).</p>
+        <p class="en-block" style="display:none;color:var(--mu);line-height:1.9;font-size:.95rem">The manual screwdriving station (MSS) mirrors a classic assembly workstation and comes from the same decommissioned production line as the ASS. It uses the same screwdriving unit as the ASS (0.5 &ndash; 5.6 Nm, max. 780 rpm), but the feed is performed manually by an operator. This makes it suitable for investigating operator-dependent process variation. Bosch Rexroth training is required before commissioning. Connectivity: FTP (without CF350 card) or Open Protocol, XML Protocol, Rexroth IPM Protocol or HTTP (with CF350 card).</p>
+        <div style="margin-top:1.6rem;display:flex;gap:.6rem;flex-wrap:wrap">
+          <a href="data.html#datensaetze" class="btn btn-b btn-sm" data-de="Zugeh&ouml;rige Datens&auml;tze" data-en="Related datasets">Zugeh&ouml;rige Datens&auml;tze</a>
+        </div>
+      </div>
+      <div>
+        <img src="assets/station-mss.webp" alt="Manuelle Schraubstation" style="width:100%;border-radius:8px;display:block;margin-bottom:1.2rem;object-fit:contain;max-height:400px">
+        <div class="spec-label" data-de="Technische Daten" data-en="Technical data">Technische Daten</div>
+        <div class="spec-table">
+          <div class="spec-row"><span class="spec-key" data-de="Hersteller" data-en="Manufacturer">Hersteller</span><span class="spec-val">Bosch Rexroth</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Vorschub" data-en="Feed">Vorschub</span><span class="spec-val">Manuell, handgef&uuml;hrt</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Drehmomentbereich" data-en="Torque range">Drehmomentbereich</span><span class="spec-val">0,5 &ndash; 5,6 Nm</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Max. Drehzahl" data-en="Max. speed">Max. Drehzahl</span><span class="spec-val">780 U/min</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Datenanbindung" data-en="Connectivity">Datenanbindung</span><span class="spec-val">FTP / Open Protocol / XML / HTTP</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Messgr&ouml;&szlig;en" data-en="Measured variables">Messgr&ouml;&szlig;en</span><span class="spec-val">Drehmoment, Drehwinkel, Zeit, Gradient</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Herkunft" data-en="Origin">Herkunft</span><span class="spec-val">Dekommissionierte ASS-Linie</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Status" data-en="Status">Status</span><span class="spec-val">Funktionsf&auml;hig, nicht einsatzf&auml;hig</span></div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<div class="station-panel" id="panel-dss">
+  <div class="st-hero">
+    <div class="st-hero-inner">
+      <div>
+        <div class="st-badge">DSS &middot; <span class="de-block">Schraubsystem</span><span class="en-block" style="display:none">Screwdriving system</span></div>
+        <h1 data-de="Doppelspindel-Schraubstation" data-en="Dual-spindle screwdriving station">Doppelspindel-Schraubstation</h1>
+        <p class="de-block">Zweispindliges Schraubsystem zur Untersuchung simultaner Schraubprozesse im h&ouml;heren Drehmomentbereich.</p>
+        <p class="en-block" style="display:none">Dual-spindle screwdriving system for investigating simultaneous fastening processes at higher torque levels.</p>
+        <div class="st-chips"><span class="chip">Desoutter / IHF Vector 180</span><span class="chip">2 Spindeln</span><span class="chip">bis 180 Nm</span><span class="chip">PROFINET</span></div>
+      </div>
+      <div class="st-icon-big">&#9881;&#65039;</div>
+    </div>
+  </div>
+  <div class="sec"><div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start">
+      <div>
+        <div class="skk" style="margin-bottom:1rem" data-de="Beschreibung" data-en="Description">Beschreibung</div>
+        <p class="de-block" style="color:var(--mu);line-height:1.9;font-size:.95rem">Die Doppelspindel-Schraubstation (DSS) stammt aus dem Demonstrations- und Forschungsbereich von BMW und wurde dort f&uuml;r Versuche und Schulungen eingesetzt. Die etwa vier Meter hohe Anlage f&uuml;hrt zwei Verschraubungen gleichzeitig aus; der hydraulische Schraubausleger wird dabei von einer Bedienperson gef&uuml;hrt. Mit einem Drehmomentbereich bis 180 Nm deckt sie schwere industrielle Schraubf&auml;lle ab. Die Datenanbindung erfolgt &uuml;ber PROFINET.</p>
+        <p class="en-block" style="display:none;color:var(--mu);line-height:1.9;font-size:.95rem">The dual-spindle screwdriving station (DSS) originates from BMW's demonstration and research area, where it was used for trials and training. The roughly four-metre installation performs two fastenings simultaneously; the hydraulic boom is guided by an operator. With a torque range up to 180 Nm it covers heavy industrial fastening cases. Connectivity is via PROFINET.</p>
+        <div style="margin-top:1.6rem;display:flex;gap:.6rem;flex-wrap:wrap">
+          <a href="data.html#datensaetze" class="btn btn-b btn-sm" data-de="Zugeh&ouml;rige Datens&auml;tze" data-en="Related datasets">Zugeh&ouml;rige Datens&auml;tze</a>
+        </div>
+      </div>
+      <div>
+        <img src="assets/station-dss.webp" alt="Doppelspindel-Schraubstation" style="width:100%;border-radius:8px;display:block;margin-bottom:1.2rem;object-fit:contain;max-height:400px">
+        <div class="spec-label" data-de="Technische Daten" data-en="Technical data">Technische Daten</div>
+        <div class="spec-table">
+          <div class="spec-row"><span class="spec-key" data-de="Hersteller" data-en="Manufacturer">Hersteller</span><span class="spec-val">Desoutter / IHF Vector 180</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Spindeln" data-en="Spindles">Spindeln</span><span class="spec-val">2 (simultan)</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Drehmomentbereich" data-en="Torque range">Drehmomentbereich</span><span class="spec-val">bis 180 Nm</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Max. Drehzahl" data-en="Max. speed">Max. Drehzahl</span><span class="spec-val">500 U/min</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Vorschub" data-en="Feed">Vorschub</span><span class="spec-val">Hydraulisch, handgef&uuml;hrt</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Datenanbindung" data-en="Connectivity">Datenanbindung</span><span class="spec-val">PROFINET</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Messgr&ouml;&szlig;en" data-en="Measured variables">Messgr&ouml;&szlig;en</span><span class="spec-val">Drehmoment, Drehwinkel</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Herkunft" data-en="Origin">Herkunft</span><span class="spec-val">BMW Demonstrations- und Forschungsbereich</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Status" data-en="Status">Status</span><span class="spec-val">Funktionsf&auml;hig, nicht einsatzf&auml;hig</span></div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<div class="station-panel" id="panel-kss">
+  <div class="st-hero">
+    <div class="st-hero-inner">
+      <div>
+        <div class="st-badge">KSS &middot; <span class="de-block">Schraubsystem</span><span class="en-block" style="display:none">Screwdriving system</span></div>
+        <h1 data-de="Kabellose Schraubsysteme" data-en="Cordless screwdriving systems">Kabellose Schraubsysteme</h1>
+        <p class="de-block">Handgef&uuml;hrte Schraubsysteme mit integrierter Prozess&uuml;berwachung auf Basis von Drehmoment- und Winkeldaten.</p>
+        <p class="en-block" style="display:none">Hand-held screwdriving systems with integrated process monitoring based on torque and angle data.</p>
+        <div class="st-chips"><span class="chip">Ingersoll Rand MH-TEC</span><span class="chip">Atlas Copco ITB-P / ITB-A</span><span class="chip">0,8 &ndash; 55 Nm</span><span class="chip">Open Protocol</span></div>
+      </div>
+      <div class="st-icon-big">&#128295;</div>
+    </div>
+  </div>
+  <div class="sec"><div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start">
+      <div>
+        <div class="skk" style="margin-bottom:1rem" data-de="Beschreibung" data-en="Description">Beschreibung</div>
+        <p class="de-block" style="color:var(--mu);line-height:1.9;font-size:.95rem">Die kabellosen Schraubsysteme (KSS) decken freie, handgef&uuml;hrte Schraubprozesse ab &mdash; einen der verbreitetsten Anwendungsf&auml;lle in der industriellen Montage. Beschafft wurden zwei Systemtypen: ein Ingersoll Rand MH-TEC (gro&szlig;: 2,4 &ndash; 12,0 Nm bei 750 U/min; klein: 0,8 &ndash; 4,0 Nm bei 1500 U/min) sowie zwei Handschrauber von Atlas Copco (ITB-P: 1 &ndash; 6 Nm bei 2000 U/min; ITB-A: 10 &ndash; 55 Nm bei 590 U/min). Beide Systeme &uuml;bertragen Drehmoment- und Drehwinkelkurven &uuml;ber das Open Protocol und erm&ouml;glichen damit eine integrierte Prozess&uuml;berwachung auf Basis von Drehmoment- und Winkeldaten.</p>
+        <p class="en-block" style="display:none;color:var(--mu);line-height:1.9;font-size:.95rem">The cordless screwdriving systems (KSS) cover free-form, hand-guided fastening &mdash; one of the most widespread use cases in industrial assembly. Two system types were procured: an Ingersoll Rand MH-TEC (large: 2.4 &ndash; 12.0 Nm at 750 rpm; small: 0.8 &ndash; 4.0 Nm at 1500 rpm) and two Atlas Copco hand tools (ITB-P: 1 &ndash; 6 Nm at 2000 rpm; ITB-A: 10 &ndash; 55 Nm at 590 rpm). Both transmit torque and angle curves via the Open Protocol, enabling integrated process monitoring based on torque and angle data.</p>
+        <div style="margin-top:1.6rem;display:flex;gap:.6rem;flex-wrap:wrap">
+          <a href="data.html#datensaetze" class="btn btn-b btn-sm" data-de="Zugeh&ouml;rige Datens&auml;tze" data-en="Related datasets">Zugeh&ouml;rige Datens&auml;tze</a>
+        </div>
+      </div>
+      <div>
+        <img src="assets/station-kss.webp" alt="Kabellose Schraubsysteme" style="width:100%;border-radius:8px;display:block;margin-bottom:1.2rem;object-fit:contain;max-height:400px">
+        <div class="spec-label" data-de="Technische Daten" data-en="Technical data">Technische Daten</div>
+        <div class="spec-table">
+          <div class="spec-row"><span class="spec-key" data-de="System 1" data-en="System 1">System 1</span><span class="spec-val">Ingersoll Rand MH-TEC (2,4 &ndash; 12,0 Nm / 750 U/min)</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="System 2" data-en="System 2">System 2</span><span class="spec-val">Ingersoll Rand MH-TEC (0,8 &ndash; 4,0 Nm / 1500 U/min)</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="System 3" data-en="System 3">System 3</span><span class="spec-val">Atlas Copco ITB-P (1 &ndash; 6 Nm / 2000 U/min)</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="System 4" data-en="System 4">System 4</span><span class="spec-val">Atlas Copco ITB-A (10 &ndash; 55 Nm / 590 U/min)</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Datenanbindung" data-en="Connectivity">Datenanbindung</span><span class="spec-val">Open Protocol</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Messgr&ouml;&szlig;en" data-en="Measured variables">Messgr&ouml;&szlig;en</span><span class="spec-val">Drehmoment- und Drehwinkelkurve</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Anwendungsfall" data-en="Use case">Anwendungsfall</span><span class="spec-val">Freie, handgef&uuml;hrte Schraubprozesse</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Herkunft" data-en="Origin">Herkunft</span><span class="spec-val">Beschafft &uuml;ber INNO-SCREW</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Status" data-en="Status">Status</span><span class="spec-val">Beschafft und in Betrieb</span></div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<div class="sec" id="foerderhinweis" style="background:var(--bg2);border-top:1px solid var(--bd);padding:2rem">
+<div class="wrap" style="max-width:960px;display:flex;flex-wrap:wrap;gap:2rem;align-items:center">
+  <img src="assets/bmwe.jpg" alt="Bundesministerium f&uuml;r Wirtschaft und Energie" style="height:78px;width:auto;object-fit:contain;flex-shrink:0">
+  <div style="flex:1;min-width:240px">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--gd2);letter-spacing:.1em;margin-bottom:.5rem" data-de="F&ouml;rderhinweis" data-en="Funding notice">F&ouml;rderhinweis</div>
+    <p class="de-block" style="font-size:.84rem;color:var(--mu);line-height:1.75;margin:0">Das Vorhaben <strong style="color:var(--tk)">INNO-SCREW</strong> wird im Rahmen des F&ouml;rderprogramms <em>Innovationskompetenz INNO-KOM</em> durch das <strong style="color:var(--tk)">Bundesministerium f&uuml;r Wirtschaft und Energie (BMWE)</strong> gef&ouml;rdert. Die Verantwortung f&uuml;r den Inhalt liegt bei den Autorinnen und Autoren.</p>
+    <p class="en-block" style="font-size:.84rem;color:var(--mu);line-height:1.75;margin:0;display:none">The <strong style="color:var(--tk)">INNO-SCREW</strong> project is funded under the <em>Innovation Competence INNO-KOM</em> programme of the <strong style="color:var(--tk)">Federal Ministry for Economic Affairs and Energy (BMWE)</strong>. The authors bear sole responsibility for the content.</p>
+  </div>
+</div></div>
+<footer>
+<div class="fin">
+  <strong>INNO-SCREW</strong> &mdash; <span class="de-block">Innovationszentrum f&uuml;r intelligentes Qualit&auml;tsmanagement in industriellen Schraubprozessen</span><span class="en-block" style="display:none">Innovation Centre for Intelligent Quality Management in Industrial Screw Fastening Processes</span>
+  <div style="margin-top:.5rem;font-size:.83rem;color:rgba(255,255,255,.65)">
+    RIF Institut f&uuml;r Forschung und Transfer e.V. &middot; Institut f&uuml;r Produktionssysteme, TU Dortmund
+  </div>
+  <div style="margin-top:.85rem;display:flex;gap:1.3rem;justify-content:center;flex-wrap:wrap">
+    <a href="contact.html#impressum" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+    <a href="contact.html#datenschutz" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+    <a href="mailto:inno-screw@rif-ev.de">inno-screw@rif-ev.de</a>
+    <a href="https://ips.mb.tu-dortmund.de/en/research-consult/research-projects/" target="_blank" rel="noopener">IPS TU Dortmund</a>
+  </div>
+  <div class="fcpy">Copyright &copy; RIF e.V. &amp; IPS TU Dortmund 2025 &ndash; 2027 &middot; INNO-KOM / BMWE</div>
+</div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

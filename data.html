@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Forschungsdaten &mdash; INNO-SCREW</title>
+<meta name="description" content="Offene Forschungsdaten von INNO-SCREW: Datensatz-IDs, Szenarien, Metadaten, Lizenz, DOI und Verfuegbarkeitsstatus."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F529;</text></svg>"/>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav>
+<div class="nw">
+  <a href="index.html" class="logo" style="padding:2px 0;display:flex;align-items:center">
+    <img src="assets/logo.png" alt="INNO-SCREW" style="height:38px;width:auto;display:block">
+  </a>
+  <ul class="nl" id="nl">
+    <li><a href="index.html" data-de="Startseite" data-en="Home">Startseite</a></li>
+    <li><a href="project.html" data-de="Projekt" data-en="Project">Projekt</a></li>
+    <li><a href="infrastructure.html" data-de="Infrastruktur" data-en="Infrastructure">Infrastruktur</a></li>
+    <li><a href="data.html" data-de="Forschungsdaten" data-en="Research Data">Forschungsdaten</a></li>
+    <li><a href="publications.html" data-de="Publikationen" data-en="Publications">Publikationen</a></li>
+    <li><a href="news.html" data-de="Aktuelles" data-en="News">Aktuelles</a></li>
+    <li><a href="contact.html" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+  </ul>
+  <div class="nc">
+    <button class="blng" id="blng" title="Switch language" aria-label="Switch language">EN</button>
+    <button class="bthm" id="bthm" title="Toggle dark mode" aria-label="Toggle dark mode"></button>
+    <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</div>
+</nav>
+<div class="phdr">
+  <h1 data-de="Forschungsdaten" data-en="Research data">Forschungsdaten</h1>
+  <p data-de="Offene Datens&auml;tze aus industriellen Schraubprozessen mit standardisierten Metadaten" data-en="Open datasets from industrial screwdriving processes with standardised metadata">Offene Datens&auml;tze aus industriellen Schraubprozessen mit standardisierten Metadaten</p>
+</div>
+
+<div class="sec"><div class="wrap">
+  <div class="sh">
+    <div class="skk" data-de="Kennzeichnung" data-en="Identifiers">Kennzeichnung</div>
+    <h2 data-de="Systeme, Szenarien und Datens&auml;tze" data-en="Systems, scenarios and datasets">Systeme, Szenarien und Datens&auml;tze</h2>
+    <div class="sr"></div>
+    <p class="de-block">Jeder Datensatz ist einem Schraubsystem und einem Versuchsszenario zugeordnet. Die drei Kennungsebenen werden getrennt gef&uuml;hrt.</p>
+    <p class="en-block" style="display:none">Every dataset is assigned to a screwdriving system and an experimental scenario. The three levels of identifier are kept separate.</p>
+  </div>
+
+  <div class="idkey">
+    <div>
+      <code>ASS, RSS, MSS, DSS, KSS</code>
+      <span class="de-block">Kennungen der f&uuml;nf physischen Schraubsysteme der Forschungsinfrastruktur.</span>
+      <span class="en-block" style="display:none">Identifiers of the five physical screwdriving systems in the research infrastructure.</span>
+    </div>
+    <div>
+      <code>S01 &hellip; S06</code>
+      <span class="de-block">Experimentelle Szenarien &mdash; jeweils eine definierte Versuchsreihe mit eigenem Fehlerbild.</span>
+      <span class="en-block" style="display:none">Experimental scenarios &mdash; each a defined series of trials with its own set of process deviations.</span>
+    </div>
+    <div>
+      <code>DS-2025-01, DS-2026-01 &hellip;</code>
+      <span class="de-block">Datens&auml;tze bzw. Messkampagnen mit eigener Version, Lizenz und DOI.</span>
+      <span class="en-block" style="display:none">Datasets and measurement campaigns, each with its own version, licence and DOI.</span>
+    </div>
+  </div>
+
+  <div class="sh" style="margin-top:3rem;margin-bottom:2rem">
+    <div class="skk" data-de="Verf&uuml;gbarkeit" data-en="Availability">Verf&uuml;gbarkeit</div>
+    <h2 data-de="Status der Datens&auml;tze" data-en="Dataset status">Status der Datens&auml;tze</h2>
+    <div class="sr"></div>
+    <p class="de-block">Jeder Datensatz tr&auml;gt einen von vier Status. Nur als <em>ver&ouml;ffentlicht</em> gekennzeichnete Daten sind &ouml;ffentlich abrufbar.</p>
+    <p class="en-block" style="display:none">Every dataset carries one of four statuses. Only data marked as <em>published</em> are publicly available.</p>
+  </div>
+  <div style="display:flex;gap:.7rem;flex-wrap:wrap;justify-content:center;margin-bottom:1rem">
+    <span class="pill pill-pub" data-de="Ver&ouml;ffentlicht" data-en="Published">Ver&ouml;ffentlicht</span>
+    <span class="pill pill-req" data-de="Auf Anfrage verf&uuml;gbar" data-en="Available on request">Auf Anfrage verf&uuml;gbar</span>
+    <span class="pill pill-prep" data-de="In Vorbereitung" data-en="In preparation">In Vorbereitung</span>
+    <span class="pill pill-run" data-de="Messkampagne l&auml;uft" data-en="Experimental campaign ongoing">Messkampagne l&auml;uft</span>
+  </div>
+</div></div>
+
+<div class="sec sec-a" id="datensaetze"><div class="wrap">
+  <div class="sh">
+    <div class="skk" data-de="Datens&auml;tze" data-en="Datasets">Datens&auml;tze</div>
+    <h2 data-de="Ver&ouml;ffentlichte Datens&auml;tze" data-en="Published datasets">Ver&ouml;ffentlichte Datens&auml;tze</h2>
+    <div class="sr"></div>
+    <p class="de-block">Sechs Versuchsszenarien mit insgesamt 34.082 Schraubvorg&auml;ngen, ver&ouml;ffentlicht als Sammlung auf Zenodo (v1.2.3, Juli 2025) unter CC BY 4.0.</p>
+    <p class="en-block" style="display:none">Six experimental scenarios with a total of 34,082 process recordings, published as a collection on Zenodo (v1.2.3, July 2025) under CC BY 4.0.</p>
+  </div>
+  <div class="dscard" id="ds-2025-01">
+    <div class="dshead">
+      <span class="dsid">DS-2025-01</span>
+      <h3 data-de="Gewindesch&auml;digung" data-en="Thread degradation">Gewindesch&auml;digung</h3>
+      <span class="pill pill-pub" data-de="Ver&ouml;ffentlicht" data-en="Published">Ver&ouml;ffentlicht</span>
+    </div>
+    <div class="dsmeta">
+      <div>
+        <div class="dsrow"><span class="k" data-de="Datensatz-ID" data-en="Dataset ID">Datensatz-ID</span><span class="v"><code>DS-2025-01</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Schraubsystem" data-en="Screwdriving system">Schraubsystem</span><span class="v"><a href="station-ass.html"><code>ASS</code></a></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsszenario" data-en="Experimental scenario">Versuchsszenario</span><span class="v"><code>S01</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Stichprobenumfang" data-en="Number of samples">Stichprobenumfang</span><span class="v"><span class="de-block">5.000 Schraubvorg&auml;nge</span><span class="en-block" style="display:none">5,000 process recordings</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Abweichungsarten" data-en="Process deviation types">Abweichungsarten</span><span class="v"><span class="de-block">Fortschreitende Gewindesch&auml;digung durch wiederholtes Verschrauben derselben Bohrung</span><span class="en-block" style="display:none">Progressive thread degradation caused by repeatedly fastening the same hole</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Labels" data-en="Labels">Labels</span><span class="v"><span class="de-block">2 Klassen: OK / NOK</span><span class="en-block" style="display:none">2 classes: OK / NOK</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsaufbau" data-en="Experimental setup">Versuchsaufbau</span><span class="v"><span class="de-block">Selbstfurchende Schrauben in Kunststoffgeh&auml;usen, zweiteiliger Werkst&uuml;ckaufbau</span><span class="en-block" style="display:none">Self-tapping screws in plastic housings, two-part workpiece assembly</span></span></div>
+      </div>
+      <div>
+        <div class="dsrow"><span class="k" data-de="Signale" data-en="Available signals">Signale</span><span class="v"><span class="de-block">Drehmoment, Drehwinkel, Zeit, Gradient &middot; 833,33 Hz</span><span class="en-block" style="display:none">Torque, angle, time, gradient &middot; 833.33 Hz</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Werkstoffe" data-en="Materials">Werkstoffe</span><span class="v"><span class="de-block">Kunststoffgeh&auml;use, selbstfurchende Stahlschrauben</span><span class="en-block" style="display:none">Plastic housings, self-tapping steel screws</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Prozessparameter" data-en="Process parameters">Prozessparameter</span><span class="v"><span class="de-block">Drehmoment- und Winkelvorgaben je Szenario, siehe Datensatzdokumentation</span><span class="en-block" style="display:none">Torque and angle set points per scenario, see dataset documentation</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Datenformat" data-en="Data format">Datenformat</span><span class="v">JSON / CSV &middot; <code>pyscrew</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Lizenz" data-en="Licence">Lizenz</span><span class="v">CC BY 4.0</span></div>
+        <div class="dsrow"><span class="k" data-de="DOI" data-en="DOI">DOI</span><span class="v"><a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener">10.5281/zenodo.16031381</a></span></div>
+        <div class="dsrow"><span class="k" data-de="Zugeh&ouml;rige Publikation" data-en="Related publication">Zugeh&ouml;rige Publikation</span><span class="v">West &amp; Deuse (2025), <a href="publications.html">PyScrew</a></span></div>
+      </div>
+    </div>
+    <div class="dsfoot">
+      <a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener" class="btn btn-b btn-sm">Zenodo</a>
+      <a href="https://github.com/nikolaiwest/pyscrew" target="_blank" rel="noopener" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)">PyScrew</a>
+      <a href="station-ass.html" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)" data-de="Schraubsystem" data-en="Screwdriving system">Schraubsystem</a>
+    </div>
+  </div>
+  <div class="dscard" id="ds-2025-02">
+    <div class="dshead">
+      <span class="dsid">DS-2025-02</span>
+      <h3 data-de="Oberfl&auml;chenreibung" data-en="Surface friction">Oberfl&auml;chenreibung</h3>
+      <span class="pill pill-pub" data-de="Ver&ouml;ffentlicht" data-en="Published">Ver&ouml;ffentlicht</span>
+    </div>
+    <div class="dsmeta">
+      <div>
+        <div class="dsrow"><span class="k" data-de="Datensatz-ID" data-en="Dataset ID">Datensatz-ID</span><span class="v"><code>DS-2025-02</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Schraubsystem" data-en="Screwdriving system">Schraubsystem</span><span class="v"><a href="station-rss.html"><code>RSS</code></a></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsszenario" data-en="Experimental scenario">Versuchsszenario</span><span class="v"><code>S02</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Stichprobenumfang" data-en="Number of samples">Stichprobenumfang</span><span class="v"><span class="de-block">12.500 Schraubvorg&auml;nge</span><span class="en-block" style="display:none">12,500 process recordings</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Abweichungsarten" data-en="Process deviation types">Abweichungsarten</span><span class="v"><span class="de-block">Sieben reibungsbeeinflussende Oberfl&auml;chenzust&auml;nde der Kunststoffgeh&auml;use</span><span class="en-block" style="display:none">Seven surface conditions of the plastic housings that influence friction</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Labels" data-en="Labels">Labels</span><span class="v"><span class="de-block">8 Klassen: OK und sieben Abweichungen</span><span class="en-block" style="display:none">8 classes: OK plus seven deviations</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsaufbau" data-en="Experimental setup">Versuchsaufbau</span><span class="v"><span class="de-block">Selbstfurchende Schrauben in Kunststoffgeh&auml;usen, zweiteiliger Werkst&uuml;ckaufbau</span><span class="en-block" style="display:none">Self-tapping screws in plastic housings, two-part workpiece assembly</span></span></div>
+      </div>
+      <div>
+        <div class="dsrow"><span class="k" data-de="Signale" data-en="Available signals">Signale</span><span class="v"><span class="de-block">Drehmoment, Drehwinkel, Zeit, Gradient &middot; 833,33 Hz</span><span class="en-block" style="display:none">Torque, angle, time, gradient &middot; 833.33 Hz</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Werkstoffe" data-en="Materials">Werkstoffe</span><span class="v"><span class="de-block">Kunststoffgeh&auml;use, selbstfurchende Stahlschrauben</span><span class="en-block" style="display:none">Plastic housings, self-tapping steel screws</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Prozessparameter" data-en="Process parameters">Prozessparameter</span><span class="v"><span class="de-block">Drehmoment- und Winkelvorgaben je Szenario, siehe Datensatzdokumentation</span><span class="en-block" style="display:none">Torque and angle set points per scenario, see dataset documentation</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Datenformat" data-en="Data format">Datenformat</span><span class="v">JSON / CSV &middot; <code>pyscrew</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Lizenz" data-en="Licence">Lizenz</span><span class="v">CC BY 4.0</span></div>
+        <div class="dsrow"><span class="k" data-de="DOI" data-en="DOI">DOI</span><span class="v"><a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener">10.5281/zenodo.16031381</a></span></div>
+        <div class="dsrow"><span class="k" data-de="Zugeh&ouml;rige Publikation" data-en="Related publication">Zugeh&ouml;rige Publikation</span><span class="v">West &amp; Deuse (2025), <a href="publications.html">PyScrew</a></span></div>
+      </div>
+    </div>
+    <div class="dsfoot">
+      <a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener" class="btn btn-b btn-sm">Zenodo</a>
+      <a href="https://github.com/nikolaiwest/pyscrew" target="_blank" rel="noopener" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)">PyScrew</a>
+      <a href="station-rss.html" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)" data-de="Schraubsystem" data-en="Screwdriving system">Schraubsystem</a>
+    </div>
+  </div>
+  <div class="dscard" id="ds-2025-03">
+    <div class="dshead">
+      <span class="dsid">DS-2025-03</span>
+      <h3 data-de="Montagebedingungen 1" data-en="Assembly conditions 1">Montagebedingungen 1</h3>
+      <span class="pill pill-pub" data-de="Ver&ouml;ffentlicht" data-en="Published">Ver&ouml;ffentlicht</span>
+    </div>
+    <div class="dsmeta">
+      <div>
+        <div class="dsrow"><span class="k" data-de="Datensatz-ID" data-en="Dataset ID">Datensatz-ID</span><span class="v"><code>DS-2025-03</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Schraubsystem" data-en="Screwdriving system">Schraubsystem</span><span class="v"><a href="station-mss.html"><code>MSS</code></a></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsszenario" data-en="Experimental scenario">Versuchsszenario</span><span class="v"><code>S03</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Stichprobenumfang" data-en="Number of samples">Stichprobenumfang</span><span class="v"><span class="de-block">1.700 Schraubvorg&auml;nge</span><span class="en-block" style="display:none">1,700 process recordings</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Abweichungsarten" data-en="Process deviation types">Abweichungsarten</span><span class="v"><span class="de-block">Variation der Montagebedingungen, u.&nbsp;a. Cross-threading, Thread deformation und erh&ouml;htes Anziehdrehmoment</span><span class="en-block" style="display:none">Variation of assembly conditions, including cross-threading, thread deformation and increased tightening torque</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Labels" data-en="Labels">Labels</span><span class="v"><span class="de-block">26 Klassen</span><span class="en-block" style="display:none">26 classes</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsaufbau" data-en="Experimental setup">Versuchsaufbau</span><span class="v"><span class="de-block">Selbstfurchende Schrauben in Kunststoffgeh&auml;usen, zweiteiliger Werkst&uuml;ckaufbau</span><span class="en-block" style="display:none">Self-tapping screws in plastic housings, two-part workpiece assembly</span></span></div>
+      </div>
+      <div>
+        <div class="dsrow"><span class="k" data-de="Signale" data-en="Available signals">Signale</span><span class="v"><span class="de-block">Drehmoment, Drehwinkel, Zeit, Gradient &middot; 833,33 Hz</span><span class="en-block" style="display:none">Torque, angle, time, gradient &middot; 833.33 Hz</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Werkstoffe" data-en="Materials">Werkstoffe</span><span class="v"><span class="de-block">Kunststoffgeh&auml;use, selbstfurchende Stahlschrauben</span><span class="en-block" style="display:none">Plastic housings, self-tapping steel screws</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Prozessparameter" data-en="Process parameters">Prozessparameter</span><span class="v"><span class="de-block">Drehmoment- und Winkelvorgaben je Szenario, siehe Datensatzdokumentation</span><span class="en-block" style="display:none">Torque and angle set points per scenario, see dataset documentation</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Datenformat" data-en="Data format">Datenformat</span><span class="v">JSON / CSV &middot; <code>pyscrew</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Lizenz" data-en="Licence">Lizenz</span><span class="v">CC BY 4.0</span></div>
+        <div class="dsrow"><span class="k" data-de="DOI" data-en="DOI">DOI</span><span class="v"><a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener">10.5281/zenodo.16031381</a></span></div>
+        <div class="dsrow"><span class="k" data-de="Zugeh&ouml;rige Publikation" data-en="Related publication">Zugeh&ouml;rige Publikation</span><span class="v">West &amp; Deuse (2025), <a href="publications.html">PyScrew</a></span></div>
+      </div>
+    </div>
+    <div class="dsfoot">
+      <a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener" class="btn btn-b btn-sm">Zenodo</a>
+      <a href="https://github.com/nikolaiwest/pyscrew" target="_blank" rel="noopener" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)">PyScrew</a>
+      <a href="station-mss.html" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)" data-de="Schraubsystem" data-en="Screwdriving system">Schraubsystem</a>
+    </div>
+  </div>
+  <div class="dscard" id="ds-2025-04">
+    <div class="dshead">
+      <span class="dsid">DS-2025-04</span>
+      <h3 data-de="Montagebedingungen 2" data-en="Assembly conditions 2">Montagebedingungen 2</h3>
+      <span class="pill pill-pub" data-de="Ver&ouml;ffentlicht" data-en="Published">Ver&ouml;ffentlicht</span>
+    </div>
+    <div class="dsmeta">
+      <div>
+        <div class="dsrow"><span class="k" data-de="Datensatz-ID" data-en="Dataset ID">Datensatz-ID</span><span class="v"><code>DS-2025-04</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Schraubsystem" data-en="Screwdriving system">Schraubsystem</span><span class="v"><a href="station-dss.html"><code>DSS</code></a></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsszenario" data-en="Experimental scenario">Versuchsszenario</span><span class="v"><code>S04</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Stichprobenumfang" data-en="Number of samples">Stichprobenumfang</span><span class="v"><span class="de-block">5.000 Schraubvorg&auml;nge</span><span class="en-block" style="display:none">5,000 process recordings</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Abweichungsarten" data-en="Process deviation types">Abweichungsarten</span><span class="v"><span class="de-block">Erweiterte Variation der Montagebedingungen mit 25 unterscheidbaren Fehlerbildern</span><span class="en-block" style="display:none">Extended variation of assembly conditions with 25 distinguishable fault patterns</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Labels" data-en="Labels">Labels</span><span class="v"><span class="de-block">25 Klassen</span><span class="en-block" style="display:none">25 classes</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsaufbau" data-en="Experimental setup">Versuchsaufbau</span><span class="v"><span class="de-block">Selbstfurchende Schrauben in Kunststoffgeh&auml;usen, zweiteiliger Werkst&uuml;ckaufbau</span><span class="en-block" style="display:none">Self-tapping screws in plastic housings, two-part workpiece assembly</span></span></div>
+      </div>
+      <div>
+        <div class="dsrow"><span class="k" data-de="Signale" data-en="Available signals">Signale</span><span class="v"><span class="de-block">Drehmoment, Drehwinkel, Zeit, Gradient &middot; 833,33 Hz</span><span class="en-block" style="display:none">Torque, angle, time, gradient &middot; 833.33 Hz</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Werkstoffe" data-en="Materials">Werkstoffe</span><span class="v"><span class="de-block">Kunststoffgeh&auml;use, selbstfurchende Stahlschrauben</span><span class="en-block" style="display:none">Plastic housings, self-tapping steel screws</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Prozessparameter" data-en="Process parameters">Prozessparameter</span><span class="v"><span class="de-block">Drehmoment- und Winkelvorgaben je Szenario, siehe Datensatzdokumentation</span><span class="en-block" style="display:none">Torque and angle set points per scenario, see dataset documentation</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Datenformat" data-en="Data format">Datenformat</span><span class="v">JSON / CSV &middot; <code>pyscrew</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Lizenz" data-en="Licence">Lizenz</span><span class="v">CC BY 4.0</span></div>
+        <div class="dsrow"><span class="k" data-de="DOI" data-en="DOI">DOI</span><span class="v"><a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener">10.5281/zenodo.16031381</a></span></div>
+        <div class="dsrow"><span class="k" data-de="Zugeh&ouml;rige Publikation" data-en="Related publication">Zugeh&ouml;rige Publikation</span><span class="v">West &amp; Deuse (2025), <a href="publications.html">PyScrew</a></span></div>
+      </div>
+    </div>
+    <div class="dsfoot">
+      <a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener" class="btn btn-b btn-sm">Zenodo</a>
+      <a href="https://github.com/nikolaiwest/pyscrew" target="_blank" rel="noopener" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)">PyScrew</a>
+      <a href="station-dss.html" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)" data-de="Schraubsystem" data-en="Screwdriving system">Schraubsystem</a>
+    </div>
+  </div>
+  <div class="dscard" id="ds-2025-05">
+    <div class="dshead">
+      <span class="dsid">DS-2025-05</span>
+      <h3 data-de="Oberes Werkst&uuml;ck" data-en="Upper workpiece">Oberes Werkst&uuml;ck</h3>
+      <span class="pill pill-pub" data-de="Ver&ouml;ffentlicht" data-en="Published">Ver&ouml;ffentlicht</span>
+    </div>
+    <div class="dsmeta">
+      <div>
+        <div class="dsrow"><span class="k" data-de="Datensatz-ID" data-en="Dataset ID">Datensatz-ID</span><span class="v"><code>DS-2025-05</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Schraubsystem" data-en="Screwdriving system">Schraubsystem</span><span class="v"><a href="station-kss.html"><code>KSS</code></a></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsszenario" data-en="Experimental scenario">Versuchsszenario</span><span class="v"><code>S05</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Stichprobenumfang" data-en="Number of samples">Stichprobenumfang</span><span class="v"><span class="de-block">2.400 Schraubvorg&auml;nge</span><span class="en-block" style="display:none">2,400 process recordings</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Abweichungsarten" data-en="Process deviation types">Abweichungsarten</span><span class="v"><span class="de-block">Fertigungsbedingte Varianz des oberen Werkst&uuml;cks</span><span class="en-block" style="display:none">Manufacturing-related variation of the upper workpiece</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Labels" data-en="Labels">Labels</span><span class="v"><span class="de-block">42 Klassen</span><span class="en-block" style="display:none">42 classes</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsaufbau" data-en="Experimental setup">Versuchsaufbau</span><span class="v"><span class="de-block">Selbstfurchende Schrauben in Kunststoffgeh&auml;usen, zweiteiliger Werkst&uuml;ckaufbau</span><span class="en-block" style="display:none">Self-tapping screws in plastic housings, two-part workpiece assembly</span></span></div>
+      </div>
+      <div>
+        <div class="dsrow"><span class="k" data-de="Signale" data-en="Available signals">Signale</span><span class="v"><span class="de-block">Drehmoment, Drehwinkel, Zeit, Gradient &middot; 833,33 Hz</span><span class="en-block" style="display:none">Torque, angle, time, gradient &middot; 833.33 Hz</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Werkstoffe" data-en="Materials">Werkstoffe</span><span class="v"><span class="de-block">Kunststoffgeh&auml;use, selbstfurchende Stahlschrauben</span><span class="en-block" style="display:none">Plastic housings, self-tapping steel screws</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Prozessparameter" data-en="Process parameters">Prozessparameter</span><span class="v"><span class="de-block">Drehmoment- und Winkelvorgaben je Szenario, siehe Datensatzdokumentation</span><span class="en-block" style="display:none">Torque and angle set points per scenario, see dataset documentation</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Datenformat" data-en="Data format">Datenformat</span><span class="v">JSON / CSV &middot; <code>pyscrew</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Lizenz" data-en="Licence">Lizenz</span><span class="v">CC BY 4.0</span></div>
+        <div class="dsrow"><span class="k" data-de="DOI" data-en="DOI">DOI</span><span class="v"><a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener">10.5281/zenodo.16031381</a></span></div>
+        <div class="dsrow"><span class="k" data-de="Zugeh&ouml;rige Publikation" data-en="Related publication">Zugeh&ouml;rige Publikation</span><span class="v">West &amp; Deuse (2025), <a href="publications.html">PyScrew</a></span></div>
+      </div>
+    </div>
+    <div class="dsfoot">
+      <a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener" class="btn btn-b btn-sm">Zenodo</a>
+      <a href="https://github.com/nikolaiwest/pyscrew" target="_blank" rel="noopener" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)">PyScrew</a>
+      <a href="station-kss.html" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)" data-de="Schraubsystem" data-en="Screwdriving system">Schraubsystem</a>
+    </div>
+  </div>
+  <div class="dscard" id="ds-2025-06">
+    <div class="dshead">
+      <span class="dsid">DS-2025-06</span>
+      <h3 data-de="Unteres Werkst&uuml;ck" data-en="Lower workpiece">Unteres Werkst&uuml;ck</h3>
+      <span class="pill pill-pub" data-de="Ver&ouml;ffentlicht" data-en="Published">Ver&ouml;ffentlicht</span>
+    </div>
+    <div class="dsmeta">
+      <div>
+        <div class="dsrow"><span class="k" data-de="Datensatz-ID" data-en="Dataset ID">Datensatz-ID</span><span class="v"><code>DS-2025-06</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Schraubsystem" data-en="Screwdriving system">Schraubsystem</span><span class="v"><a href="station-kss.html"><code>KSS</code></a></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsszenario" data-en="Experimental scenario">Versuchsszenario</span><span class="v"><code>S06</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Stichprobenumfang" data-en="Number of samples">Stichprobenumfang</span><span class="v"><span class="de-block">7.482 Schraubvorg&auml;nge</span><span class="en-block" style="display:none">7,482 process recordings</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Abweichungsarten" data-en="Process deviation types">Abweichungsarten</span><span class="v"><span class="de-block">Fertigungsbedingte Varianz des unteren Werkst&uuml;cks</span><span class="en-block" style="display:none">Manufacturing-related variation of the lower workpiece</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Labels" data-en="Labels">Labels</span><span class="v"><span class="de-block">44 Klassen</span><span class="en-block" style="display:none">44 classes</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsaufbau" data-en="Experimental setup">Versuchsaufbau</span><span class="v"><span class="de-block">Selbstfurchende Schrauben in Kunststoffgeh&auml;usen, zweiteiliger Werkst&uuml;ckaufbau</span><span class="en-block" style="display:none">Self-tapping screws in plastic housings, two-part workpiece assembly</span></span></div>
+      </div>
+      <div>
+        <div class="dsrow"><span class="k" data-de="Signale" data-en="Available signals">Signale</span><span class="v"><span class="de-block">Drehmoment, Drehwinkel, Zeit, Gradient &middot; 833,33 Hz</span><span class="en-block" style="display:none">Torque, angle, time, gradient &middot; 833.33 Hz</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Werkstoffe" data-en="Materials">Werkstoffe</span><span class="v"><span class="de-block">Kunststoffgeh&auml;use, selbstfurchende Stahlschrauben</span><span class="en-block" style="display:none">Plastic housings, self-tapping steel screws</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Prozessparameter" data-en="Process parameters">Prozessparameter</span><span class="v"><span class="de-block">Drehmoment- und Winkelvorgaben je Szenario, siehe Datensatzdokumentation</span><span class="en-block" style="display:none">Torque and angle set points per scenario, see dataset documentation</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Datenformat" data-en="Data format">Datenformat</span><span class="v">JSON / CSV &middot; <code>pyscrew</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Lizenz" data-en="Licence">Lizenz</span><span class="v">CC BY 4.0</span></div>
+        <div class="dsrow"><span class="k" data-de="DOI" data-en="DOI">DOI</span><span class="v"><a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener">10.5281/zenodo.16031381</a></span></div>
+        <div class="dsrow"><span class="k" data-de="Zugeh&ouml;rige Publikation" data-en="Related publication">Zugeh&ouml;rige Publikation</span><span class="v">West &amp; Deuse (2025), <a href="publications.html">PyScrew</a></span></div>
+      </div>
+    </div>
+    <div class="dsfoot">
+      <a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener" class="btn btn-b btn-sm">Zenodo</a>
+      <a href="https://github.com/nikolaiwest/pyscrew" target="_blank" rel="noopener" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)">PyScrew</a>
+      <a href="station-kss.html" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)" data-de="Schraubsystem" data-en="Screwdriving system">Schraubsystem</a>
+    </div>
+  </div>
+
+  <div class="dscard" id="ds-2026-01">
+    <div class="dshead">
+      <span class="dsid">DS-2026-01</span>
+      <h3 data-de="INNO-SCREW Messkampagne 2026" data-en="INNO-SCREW measurement campaign 2026">INNO-SCREW Messkampagne 2026</h3>
+      <span class="pill pill-run" data-de="Messkampagne l&auml;uft" data-en="Experimental campaign ongoing">Messkampagne l&auml;uft</span>
+    </div>
+    <div class="dsmeta">
+      <div>
+        <div class="dsrow"><span class="k" data-de="Datensatz-ID" data-en="Dataset ID">Datensatz-ID</span><span class="v"><code>DS-2026-01</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Schraubsysteme" data-en="Screwdriving systems">Schraubsysteme</span><span class="v"><code>ASS</code>, <code>RSS</code>, <code>KSS</code></span></div>
+        <div class="dsrow"><span class="k" data-de="Versuchsszenario" data-en="Experimental scenario">Versuchsszenario</span><span class="v"><span class="de-block">In Definition</span><span class="en-block" style="display:none">Being defined</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Stichprobenumfang" data-en="Number of samples">Stichprobenumfang</span><span class="v"><span class="de-block">Laufend</span><span class="en-block" style="display:none">Ongoing</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Abweichungsarten" data-en="Process deviation types">Abweichungsarten</span><span class="v"><span class="de-block">Cross-threading, Thread deformation, erh&ouml;htes Anziehdrehmoment, weitere in Abstimmung</span><span class="en-block" style="display:none">Cross-threading, thread deformation, increased tightening torque, further types under discussion</span></span></div>
+      </div>
+      <div>
+        <div class="dsrow"><span class="k" data-de="Signale" data-en="Available signals">Signale</span><span class="v"><span class="de-block">Drehmoment, Drehwinkel, Zeit</span><span class="en-block" style="display:none">Torque, angle, time</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Datenformat" data-en="Data format">Datenformat</span><span class="v">JSON / CSV</span></div>
+        <div class="dsrow"><span class="k" data-de="Lizenz" data-en="Licence">Lizenz</span><span class="v"><span class="de-block">Vorgesehen: CC BY 4.0</span><span class="en-block" style="display:none">Planned: CC BY 4.0</span></span></div>
+        <div class="dsrow"><span class="k" data-de="DOI" data-en="DOI">DOI</span><span class="v"><span class="de-block">Noch nicht vergeben</span><span class="en-block" style="display:none">Not yet assigned</span></span></div>
+        <div class="dsrow"><span class="k" data-de="Verf&uuml;gbarkeit" data-en="Availability">Verf&uuml;gbarkeit</span><span class="v"><span class="de-block">Noch nicht ver&ouml;ffentlicht &mdash; Anfragen &uuml;ber das Projektteam</span><span class="en-block" style="display:none">Not yet published &mdash; enquiries via the project team</span></span></div>
+      </div>
+    </div>
+    <div class="dsfoot">
+      <a href="contact.html" class="btn btn-b btn-sm" data-de="Anfrage stellen" data-en="Make an enquiry">Anfrage stellen</a>
+    </div>
+  </div>
+
+  <div class="note" style="max-width:940px;margin:2rem auto 0">
+    <span class="de-block">Daten, die hier nicht als <em>ver&ouml;ffentlicht</em> gekennzeichnet sind, stehen noch nicht zum Download bereit. Zwischenst&auml;nde k&ouml;nnen auf Anfrage und im Rahmen von Forschungskooperationen zug&auml;nglich gemacht werden.</span>
+    <span class="en-block" style="display:none">Data not marked as <em>published</em> here are not yet available for download. Interim results can be made accessible on request and within research collaborations.</span>
+  </div>
+</div></div>
+
+<div class="sec"><div class="wrap">
+  <div class="sh">
+    <div class="skk" data-de="Terminologie" data-en="Terminology">Terminologie</div>
+    <h2 data-de="Abweichungsarten" data-en="Process deviation types">Abweichungsarten</h2>
+    <div class="sr"></div>
+    <p class="de-block">In den Datens&auml;tzen und Publikationen werden durchgehend die folgenden Bezeichnungen verwendet.</p>
+    <p class="en-block" style="display:none">The following designations are used consistently across datasets and publications.</p>
+  </div>
+  <div class="tscroll" style="max-width:820px;margin:0 auto">
+    <table class="dtable">
+      <thead><tr>
+        <th data-de="Bezeichnung" data-en="Term">Bezeichnung</th>
+        <th data-de="Deutsch" data-en="German">Deutsch</th>
+        <th data-de="Beschreibung" data-en="Description">Beschreibung</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><strong>Cross-threading</strong></td><td>Schr&auml;geinschraubung</td>
+          <td><span class="de-block">Schraube wird nicht achsparallel angesetzt und schneidet ein zweites Gewinde.</span><span class="en-block" style="display:none">The screw is not started coaxially and cuts a second thread.</span></td></tr>
+        <tr><td><strong>Thread deformation</strong></td><td>Gewindeverformung</td>
+          <td><span class="de-block">Bleibende Verformung des Gewindes, meist durch wiederholtes Verschrauben.</span><span class="en-block" style="display:none">Permanent deformation of the thread, usually caused by repeated fastening.</span></td></tr>
+        <tr><td><strong>Increased tightening torque</strong></td><td>Erh&ouml;htes Anziehdrehmoment</td>
+          <td><span class="de-block">Abschaltdrehmoment oberhalb der Sollvorgabe.</span><span class="en-block" style="display:none">Shut-off torque above the specified set point.</span></td></tr>
+        <tr><td><strong>OK / NOK</strong></td><td>OK / NOK</td>
+          <td><span class="de-block">Einheitliche Bewertung eines Schraubvorgangs. Die Bezeichnungen IO/NIO werden nicht mehr verwendet.</span><span class="en-block" style="display:none">Uniform assessment of a screwdriving process. The designations IO/NIO are no longer used.</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div></div>
+
+<div class="sec sec-a"><div class="wrap">
+  <div class="sh">
+    <div class="skk" data-de="Zugang" data-en="Access">Zugang</div>
+    <h2 data-de="Datenzugriff" data-en="Accessing the data">Datenzugriff</h2>
+    <div class="sr"></div>
+  </div>
+  <div class="cards" style="max-width:900px;margin:0 auto">
+    <div class="card">
+      <div class="cico">&#128202;</div>
+      <h3>Zenodo</h3>
+      <p class="de-block">Direkter Download der vollst&auml;ndigen Datensatzsammlung mit Dokumentation, Version v1.2.3 (Juli 2025), Lizenz CC BY 4.0.</p>
+      <p class="en-block" style="display:none">Direct download of the complete dataset collection including documentation, version v1.2.3 (July 2025), licence CC BY 4.0.</p>
+      <div style="margin-top:1rem"><a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener" class="btn btn-b btn-sm">10.5281/zenodo.16031381</a></div>
+    </div>
+    <div class="card">
+      <div class="cico">&#128187;</div>
+      <h3>PyScrew</h3>
+      <p class="de-block">Python-Bibliothek f&uuml;r den strukturierten Zugriff auf die Datens&auml;tze, inklusive Download, Vorverarbeitung und Anbindung an g&auml;ngige ML-Frameworks.</p>
+      <p class="en-block" style="display:none">Python library for structured access to the datasets, including download, preprocessing and integration with common ML frameworks.</p>
+      <div style="margin-top:.7rem"><code style="background:var(--bg2);padding:.2rem .5rem;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:.78rem">pip install pyscrew</code></div>
+      <div style="margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap">
+        <a href="https://github.com/nikolaiwest/pyscrew" target="_blank" rel="noopener" class="btn btn-b btn-sm">GitHub</a>
+        <a href="https://pypi.org/project/pyscrew/" target="_blank" rel="noopener" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)">PyPI</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="cico">&#9993;&#65039;</div>
+      <h3 data-de="Anfrage" data-en="Enquiry">Anfrage</h3>
+      <p class="de-block">F&uuml;r noch nicht ver&ouml;ffentlichte Messkampagnen und f&uuml;r Forschungskooperationen wenden Sie sich bitte an das Projektteam.</p>
+      <p class="en-block" style="display:none">For measurement campaigns that are not yet published and for research collaborations, please contact the project team.</p>
+      <div style="margin-top:1rem"><a href="contact.html" class="btn btn-b btn-sm" data-de="Kontakt" data-en="Contact">Kontakt</a></div>
+    </div>
+  </div>
+  <div class="note" style="max-width:900px;margin:2rem auto 0">
+    <span class="de-block"><strong>Zitierhinweis:</strong> West, N.; Deuse, J. (2025): <em>Industrial screw driving dataset collection &mdash; time series data for process monitoring and anomaly detection.</em> Zenodo, v1.2.3. DOI: 10.5281/zenodo.16031381</span>
+    <span class="en-block" style="display:none"><strong>How to cite:</strong> West, N.; Deuse, J. (2025): <em>Industrial screw driving dataset collection &mdash; time series data for process monitoring and anomaly detection.</em> Zenodo, v1.2.3. DOI: 10.5281/zenodo.16031381</span>
+  </div>
+</div></div>
+
+<div class="sec" id="foerderhinweis" style="background:var(--bg2);border-top:1px solid var(--bd);padding:2rem">
+<div class="wrap" style="max-width:960px;display:flex;flex-wrap:wrap;gap:2rem;align-items:center">
+  <img src="assets/bmwe.jpg" alt="Bundesministerium f&uuml;r Wirtschaft und Energie" style="height:78px;width:auto;object-fit:contain;flex-shrink:0">
+  <div style="flex:1;min-width:240px">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--gd2);letter-spacing:.1em;margin-bottom:.5rem" data-de="F&ouml;rderhinweis" data-en="Funding notice">F&ouml;rderhinweis</div>
+    <p class="de-block" style="font-size:.84rem;color:var(--mu);line-height:1.75;margin:0">Das Vorhaben <strong style="color:var(--tk)">INNO-SCREW</strong> wird im Rahmen des F&ouml;rderprogramms <em>Innovationskompetenz INNO-KOM</em> durch das <strong style="color:var(--tk)">Bundesministerium f&uuml;r Wirtschaft und Energie (BMWE)</strong> gef&ouml;rdert. Die Verantwortung f&uuml;r den Inhalt liegt bei den Autorinnen und Autoren.</p>
+    <p class="en-block" style="font-size:.84rem;color:var(--mu);line-height:1.75;margin:0;display:none">The <strong style="color:var(--tk)">INNO-SCREW</strong> project is funded under the <em>Innovation Competence INNO-KOM</em> programme of the <strong style="color:var(--tk)">Federal Ministry for Economic Affairs and Energy (BMWE)</strong>. The authors bear sole responsibility for the content.</p>
+  </div>
+</div></div>
+<footer>
+<div class="fin">
+  <strong>INNO-SCREW</strong> &mdash; <span class="de-block">Innovationszentrum f&uuml;r intelligentes Qualit&auml;tsmanagement in industriellen Schraubprozessen</span><span class="en-block" style="display:none">Innovation Centre for Intelligent Quality Management in Industrial Screw Fastening Processes</span>
+  <div style="margin-top:.5rem;font-size:.83rem;color:rgba(255,255,255,.65)">
+    RIF Institut f&uuml;r Forschung und Transfer e.V. &middot; Institut f&uuml;r Produktionssysteme, TU Dortmund
+  </div>
+  <div style="margin-top:.85rem;display:flex;gap:1.3rem;justify-content:center;flex-wrap:wrap">
+    <a href="contact.html#impressum" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+    <a href="contact.html#datenschutz" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+    <a href="mailto:inno-screw@rif-ev.de">inno-screw@rif-ev.de</a>
+    <a href="https://ips.mb.tu-dortmund.de/en/research-consult/research-projects/" target="_blank" rel="noopener">IPS TU Dortmund</a>
+  </div>
+  <div class="fcpy">Copyright &copy; RIF e.V. &amp; IPS TU Dortmund 2025 &ndash; 2027 &middot; INNO-KOM / BMWE</div>
+</div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

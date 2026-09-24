@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Roboterbasierte Schraubstation (RSS) &mdash; INNO-SCREW</title>
+<meta name="description" content="Technische Daten des Schraubsystems RSS in der INNO-SCREW-Forschungsinfrastruktur."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F529;</text></svg>"/>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav>
+<div class="nw">
+  <a href="index.html" class="logo" style="padding:2px 0;display:flex;align-items:center">
+    <img src="assets/logo.png" alt="INNO-SCREW" style="height:38px;width:auto;display:block">
+  </a>
+  <ul class="nl" id="nl">
+    <li><a href="index.html" data-de="Startseite" data-en="Home">Startseite</a></li>
+    <li><a href="project.html" data-de="Projekt" data-en="Project">Projekt</a></li>
+    <li><a href="infrastructure.html" data-de="Infrastruktur" data-en="Infrastructure">Infrastruktur</a></li>
+    <li><a href="data.html" data-de="Forschungsdaten" data-en="Research Data">Forschungsdaten</a></li>
+    <li><a href="publications.html" data-de="Publikationen" data-en="Publications">Publikationen</a></li>
+    <li><a href="news.html" data-de="Aktuelles" data-en="News">Aktuelles</a></li>
+    <li><a href="contact.html" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+  </ul>
+  <div class="nc">
+    <button class="blng" id="blng" title="Switch language" aria-label="Switch language">EN</button>
+    <button class="bthm" id="bthm" title="Toggle dark mode" aria-label="Toggle dark mode"></button>
+    <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</div>
+</nav>
+<div class="phdr">
+  <h1 data-de="Roboterbasierte Schraubstation" data-en="Robot-based screwdriving station">Roboterbasierte Schraubstation</h1>
+  <p data-de="Schraubsystem RSS &middot; Technische Daten und zugeh&ouml;rige Versuchsszenarien" data-en="Screwdriving system RSS &middot; technical data and related experimental scenarios">Schraubsystem RSS &middot; Technische Daten und zugeh&ouml;rige Versuchsszenarien</p>
+</div>
+
+<div class="sec"><div class="wrap">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:start">
+    <div>
+      <div class="skk" style="margin-bottom:.9rem">RSS &mdash; INNO-SCREW</div>
+      <h2 style="font-family:'Lora',serif;font-size:1.4rem;margin-bottom:.9rem;color:var(--tk)" data-de="Roboterbasierte Schraubstation (RSS)" data-en="Robot-based screwdriving station (RSS)">Roboterbasierte Schraubstation (RSS)</h2>
+      <p class="de-block" style="color:var(--mu);line-height:1.9;font-size:.95rem">Die Roboterbasierte Schraubstation (RSS) besteht aus einem Hanwha-Cobot auf einem mobilen Montagesockel mit einem multifunktionalen Schraubaktor von OnRobot inklusive Schraubenzuf&uuml;hrung. Sie erlaubt die robotergest&uuml;tzte Durchf&uuml;hrung automatisierter und reproduzierbarer Versuchsabl&auml;ufe. Das System wurde im Rahmen des BMWi-Projekts SUPPLy beschafft und erprobt. Die Datenanbindung erfolgt &uuml;ber Modbus (TCP) und Ethernet/IP f&uuml;r den Schrauber sowie Modbus f&uuml;r den Roboter.</p>
+      <p class="en-block" style="display:none;color:var(--mu);line-height:1.9;font-size:.95rem">The robot-based screwdriving station (RSS) consists of a Hanwha cobot on a mobile assembly base with a multi-functional OnRobot screwdriving actuator including automatic screw feed. It allows automated and reproducible experimental runs to be carried out under robot control. The system was procured and tested in the BMWi project SUPPLy. Connectivity is via Modbus (TCP) and Ethernet/IP for the screwdriver and Modbus for the robot.</p>
+      <div style="margin-top:1.6rem;display:flex;gap:.6rem;flex-wrap:wrap">
+        <a href="infrastructure.html#rss" class="btn btn-b btn-sm" data-de="Zur Infrastruktur&uuml;bersicht" data-en="Back to infrastructure">Zur Infrastruktur&uuml;bersicht</a>
+        <a href="data.html#datensaetze" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)" data-de="Forschungsdaten" data-en="Research data">Forschungsdaten</a>
+      </div>
+    </div>
+    <div>
+      <div style="background:var(--cd);border:1px solid var(--bd);border-radius:10px;padding:1.5rem;box-shadow:var(--sh)">
+        <img src="assets/station-rss.webp" alt="Roboterbasierte Schraubstation" style="width:100%;border-radius:8px;display:block;margin-bottom:1.1rem;object-fit:cover;max-height:260px">
+        <div class="spec-label" data-de="Technische Daten" data-en="Technical data">Technische Daten</div>
+        <div class="spec-table">
+          <div class="spec-row"><span class="spec-key" data-de="Roboter" data-en="Robot">Roboter</span><span class="spec-val">Hanwha Cobot, mobiler Montagesockel</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Schraubaktor" data-en="Actuator">Schraubaktor</span><span class="spec-val">OnRobot, multifunktional mit Zuf&uuml;hrung</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Drehmomentbereich" data-en="Torque range">Drehmomentbereich</span><span class="spec-val">0,15 &ndash; 5,0 Nm</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Max. Drehzahl" data-en="Max. speed">Max. Drehzahl</span><span class="spec-val">340 U/min</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Datenanbindung" data-en="Connectivity">Datenanbindung</span><span class="spec-val">Modbus TCP / Ethernet/IP</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Messgr&ouml;&szlig;en" data-en="Measured variables">Messgr&ouml;&szlig;en</span><span class="spec-val">Drehmoment, Vorschub, Vorschubkraft, Achsdaten</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Herkunft" data-en="Origin">Herkunft</span><span class="spec-val">Projekt SUPPLy (BMWi)</span></div>
+          <div class="spec-row"><span class="spec-key" data-de="Status" data-en="Status">Status</span><span class="spec-val">Bedingt einsatzf&auml;hig</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<div class="sec sec-a"><div class="wrap" style="max-width:760px">
+  <div class="sh">
+    <div class="skk" data-de="Versuchsszenarien" data-en="Experimental scenarios">Versuchsszenarien</div>
+    <h2 data-de="Szenarien auf diesem System" data-en="Scenarios recorded on this system">Szenarien auf diesem System</h2>
+    <div class="sr"></div>
+  </div>
+  <div class="dscard">
+    <div class="dsmeta" style="grid-template-columns:1fr">
+        <div class="dsrow"><span class="k">S02</span><span class="v"><span class="de-block">Oberfl&auml;chenreibung &mdash; 12.500 Schraubvorg&auml;nge, 8 Klassen</span><span class="en-block" style="display:none">Surface friction &mdash; 12,500 process recordings, 8 classes</span> &middot; <code>DS-2025-02</code></span></div>
+    </div>
+    <div class="dsfoot">
+      <a href="data.html#datensaetze" class="btn btn-b btn-sm" data-de="Datensatz-Metadaten" data-en="Dataset metadata">Datensatz-Metadaten</a>
+      <a href="https://doi.org/10.5281/zenodo.16031381" target="_blank" rel="noopener" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)">Zenodo</a>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;gap:1rem;margin-top:2.4rem;flex-wrap:wrap">
+    <a href="station-ass.html" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)">&larr; ASS</a>
+    <a href="station-mss.html" class="btn btn-sm" style="background:var(--bg2);border:1px solid var(--bd);color:var(--mu)">MSS &rarr;</a>
+  </div>
+</div></div>
+
+<div class="sec" id="foerderhinweis" style="background:var(--bg2);border-top:1px solid var(--bd);padding:2rem">
+<div class="wrap" style="max-width:960px;display:flex;flex-wrap:wrap;gap:2rem;align-items:center">
+  <img src="assets/bmwe.jpg" alt="Bundesministerium f&uuml;r Wirtschaft und Energie" style="height:78px;width:auto;object-fit:contain;flex-shrink:0">
+  <div style="flex:1;min-width:240px">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--gd2);letter-spacing:.1em;margin-bottom:.5rem" data-de="F&ouml;rderhinweis" data-en="Funding notice">F&ouml;rderhinweis</div>
+    <p class="de-block" style="font-size:.84rem;color:var(--mu);line-height:1.75;margin:0">Das Vorhaben <strong style="color:var(--tk)">INNO-SCREW</strong> wird im Rahmen des F&ouml;rderprogramms <em>Innovationskompetenz INNO-KOM</em> durch das <strong style="color:var(--tk)">Bundesministerium f&uuml;r Wirtschaft und Energie (BMWE)</strong> gef&ouml;rdert. Die Verantwortung f&uuml;r den Inhalt liegt bei den Autorinnen und Autoren.</p>
+    <p class="en-block" style="font-size:.84rem;color:var(--mu);line-height:1.75;margin:0;display:none">The <strong style="color:var(--tk)">INNO-SCREW</strong> project is funded under the <em>Innovation Competence INNO-KOM</em> programme of the <strong style="color:var(--tk)">Federal Ministry for Economic Affairs and Energy (BMWE)</strong>. The authors bear sole responsibility for the content.</p>
+  </div>
+</div></div>
+<footer>
+<div class="fin">
+  <strong>INNO-SCREW</strong> &mdash; <span class="de-block">Innovationszentrum f&uuml;r intelligentes Qualit&auml;tsmanagement in industriellen Schraubprozessen</span><span class="en-block" style="display:none">Innovation Centre for Intelligent Quality Management in Industrial Screw Fastening Processes</span>
+  <div style="margin-top:.5rem;font-size:.83rem;color:rgba(255,255,255,.65)">
+    RIF Institut f&uuml;r Forschung und Transfer e.V. &middot; Institut f&uuml;r Produktionssysteme, TU Dortmund
+  </div>
+  <div style="margin-top:.85rem;display:flex;gap:1.3rem;justify-content:center;flex-wrap:wrap">
+    <a href="contact.html#impressum" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+    <a href="contact.html#datenschutz" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+    <a href="mailto:inno-screw@rif-ev.de">inno-screw@rif-ev.de</a>
+    <a href="https://ips.mb.tu-dortmund.de/en/research-consult/research-projects/" target="_blank" rel="noopener">IPS TU Dortmund</a>
+  </div>
+  <div class="fcpy">Copyright &copy; RIF e.V. &amp; IPS TU Dortmund 2025 &ndash; 2027 &middot; INNO-KOM / BMWE</div>
+</div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
